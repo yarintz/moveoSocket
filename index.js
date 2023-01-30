@@ -3,7 +3,7 @@ import { Server } from "socket.io";
 // create io
 const io = new Server({
     cors:{
-        origin:"https://moveo-client.web.app/"
+        origin:"https://moveo-client.web.app"
     }
 });
 let firstClient = true;
