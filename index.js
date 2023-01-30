@@ -8,8 +8,10 @@ const io = new Server({
 });
 let firstClient = true;
 const allusers =[]
+console.log("socket")
 // a user connected
 io.on("connection", (socket) => {
+  console.log("connected")
 allusers.push("a")
     if(firstClient){
         socket.emit('firstClientConnected');
